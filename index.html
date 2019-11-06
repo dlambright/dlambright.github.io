@@ -16,6 +16,10 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/fullpage.css">
 
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
 
 </head>
 
@@ -37,16 +41,17 @@
   <div id="fullPage">
     <div class="section" style="background-color: #333333;">
       <div class="row" style="">
-        <div class="col-lg-4" style=" display: flex;
+        <div class="col-lg-12" style=" display: flex;
                                       align-items: center;
                                       flex-wrap: wrap;">
-          <span style="color: white; font-size: 60px; font-weight: bold; padding: 10px;">
-            DUSTIN
-          </span>
+
+
+          <span id="typed" style="color:#fff; font-size: 60px;"></span>
+
         </div>
-        <div id="profilePhotoDiv" class="col-lg-8">
+        <!-- <div id="profilePhotoDiv" class="col-lg-8"> -->
           <!--<img src="images/duzn.jpg" style="height: 100vh;"></img>-->
-        </div>
+        <!-- </div> -->
       </div>
     </div>
 
@@ -55,42 +60,52 @@
         <div class="col-lg-4">
           <h1 style="color: #FFF; padding: 5px;"> MY BODY OF WORK </h1>
         </div>
-        <div class="col-lg-8">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="my_work_tile">
-                <a href="iqnava.html">
-                  <img src="images/iqnava-logo-svg.svg" style=""></img>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="my_work_tile">
-                <img src="images/iqnava-logo-svg.svg" style=""></img>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="my_work_tile">
-                <img src="images/iqnava-logo-svg.svg" style=""></img>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="my_work_tile">
-                <img src="images/iqnava-logo-svg.svg" style=""></img>
-              </div>
-            </div>
+
+        <div id="picture-carousel" class="col-lg-8 owl-carousel owl-theme" style="">
+          <div>
+            <a href="iqnava.html">
+              <img src="images/smartphone.svg" style="" class="carousel-stuff" style=""></img>
+            </a>
+            <p> This is a paragraph about project # 1 <p>
+            <ul>
+              <li> item 1 </li>
+              <li> item 2 </li>
+              <li> item 3 </li>
+            </ul>
+          </div>
+          <div>
+            <a href="iqnava.html">
+              <img src="images/smartphone.svg" style="" class="carousel-stuff"></img>
+            </a>
+          </div>
+          <div>
+            <a href="iqnava.html">
+              <img src="images/smartphone.svg" style="" class="carousel-stuff"></img>
+            </a>
+          </div>
+          <div>
+            <a href="iqnava.html">
+              <img src="images/smartphone.svg" style="" class="carousel-stuff"></img>
+            </a>
           </div>
 
         </div>
+
+
+
       </div>
     </div>
 
     <div class="section" style="background-color: #999999;">
-      <div class="row">
-        <div class="col-lg-4">
-          <span style="color: white; font-size: 60px; font-weight: bold; padding: 10px;">
-            MY CONTACT INFO
-          </span>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <span style="color: white; font-size: 60px; font-weight: bold; padding: 10px;">
+              <h1 style="font-size:80px;"> GET IN TOUCH </h1>
+              <h2>lambright.dustin@gmail.com</h2>
+              <img src="images/house.jpeg" style="width:100%; height: 60vh;"></img>
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -108,6 +123,12 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+<!--Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+<!-- Owl Carousel -->
+<script src="js/owl.carousel.min.js"></script>
 
 
 
