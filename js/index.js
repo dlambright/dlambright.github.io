@@ -1,6 +1,16 @@
+var sideNavIsVisible = false;
+
 $(document).ready(function() {
 	$('#fullPage').fullpage({
-		parallax: true
+		parallax: true,
+		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+		navigation: true,
+		navigationPosition: 'right',
+		slidesNavigation: 'false',
+		easing: 'easeInQuart',
+		menu: 'myMenu',
+		anchors:['home', 'work', 'contact']
+
 		// autoScrolling:false,
     // lockAnchors: false,
     // anchors:['firstPage', 'secondPage'],
@@ -9,6 +19,12 @@ $(document).ready(function() {
 	//methods
 	$.fn.fullpage.setAllowScrolling(true);
 
+	$('#fullPage').on('click', function(){
+		closeNav();
+	});
+	$('#mySidenav').on('click', function(){
+		closeNav();
+	});
 	var options = {
 		strings: ['<span style="color: #ff0000;">Dustin</span>novation',
 							'<span style="color: #ff0000;">Dustin</span>tegrity',
@@ -26,31 +42,34 @@ $(document).ready(function() {
 
 	var typed = new Typed('#typed', options);
 
-	$("#picture-carousel").owlCarousel({
-		center: true,
-		loop: true,
-		items: 1,
-		nav: true,
-		margin: 10,
-		responsive:{
-	        0:{
-	            items:1
-	        },
-	        600:{
-	            items:2
-	        },
-	        1000:{
-	            items:3
-	        }
-	    }
- 	});
-
-	/*$("#description-carousel").owlCarousel({
-		center: true,
-		loop: true,
-		items: 1,
-		nav: true,
-		margin: 10,
-
- 	});*/
 });
+
+
+
+/*
+	SIDE NAV
+*/
+
+function sideNavIsClicked(){
+	(sideNavIsVisible == true) ? closeNav() : openNav();
+}
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+	//full-page
+	document.getElementById("mySidenav").style.width = "100%";
+  //document.getElementById("mySidenav").style.width = "250px";
+  //document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+	sideNavIsVisible = true;
+	$("#fp-nav").addClass("d-none");
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+	sideNavIsVisible = false;
+	$("#fp-nav").removeClass("d-none");
+}
