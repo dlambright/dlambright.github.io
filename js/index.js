@@ -26,9 +26,9 @@ $(document).ready(function() {
 		closeNav();
 	});
 	var options = {
-		strings: ['<span style="color: #ff0000;">Dustin</span>novation',
-							'<span style="color: #ff0000;">Dustin</span>tegrity',
-							'<span style="color: #ff0000;">Dustin</span>teresting'],
+		strings: ['<span style="color: #AA00AA; font-weight: bold;">Dustin</span>novation',
+							'<span style="color: #AA00AA; font-weight: bold;">Dustin</span>tegrity',
+							'<span style="color: #AA00AA; font-weight: bold;">Dustin</span>teresting'],
 		smartBackspace: true,
 		typeSpeed: 80,
 		loop: true,
@@ -63,13 +63,15 @@ function openNav() {
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 	sideNavIsVisible = true;
 	$("#fp-nav").addClass("d-none");
+	$(".hamburger").addClass("is-active");
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
+	document.getElementById("mySidenav").style.width = "0";
+  // document.getElementById("main").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 	sideNavIsVisible = false;
 	$("#fp-nav").removeClass("d-none");
+	$(".hamburger").removeClass("is-active");
 }
