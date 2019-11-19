@@ -23,24 +23,26 @@
 
 <body>
 
-  <nav class="navbar fixed-top navbar-expand-lg bg-transparent">
-    <span style="padding:10px; color: #ffffff; font-size: 30px; font-weight: bold;">DUSTIN</span>
+  <nav class="navbar fixed-top  bg-transparent">
+    <div style="width:80%; float:left;">
+      <span style="padding:10px; color: #ffffff; font-size: 30px; font-weight: bold;">DUSTIN</span>
+    </div>
 
-    <div style="text-align: right; width: 100%;">
-      <button class="hamburger hamburger--squeeze " type="button" onclick="sideNavIsClicked()">
+    <div style="width: 20%; text-align: right;" >
+      <button class="hamburger hamburger--squeeze pull-right" type="button" onclick="sideNavIsClicked()">
         <span class="hamburger-box">
           <span class="hamburger-inner" style="background-color:#ffffff;"></span>
         </span>
       </button>
-    <div>
+    </div>
 
   </nav>
   <div id="mySidenav" class="sidenav text-center">
     <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
     <ul id="myMenu" style="list-style-type: none;">
-    	<li data-menuanchor="home" class="active "><a href="#home">HOME</a></li>
-    	<li data-menuanchor="work"><a href="#work">WORK</a></li>
-    	<li data-menuanchor="contact"><a href="#contact">CONTACT</a></li>
+    	<li class="menuItem" data-menuanchor="home" class="active "><a href="#home">HOME</a></li>
+    	<li class="menuItem" data-menuanchor="work"><a href="#work">WORK</a></li>
+    	<li class="menuItem" data-menuanchor="contact"><a href="#contact">CONTACT</a></li>
     </ul>
   </div>
 
@@ -94,10 +96,28 @@
           <div class="col-lg-12">
             <span style="color: white; font-size: 60px; font-weight: bold; padding: 10px;">
               <h1 style="font-size:80px;"> GET IN TOUCH </h1>
-              <h2>lambright.dustin@gmail.com</h2>
-              <a href="http://www.github.com/dlambright">
-                <i class="fab fa-github fa-2x"style="color: #ffffff"></i>
-              </a>
+
+
+              <ul style="list-style-type: none;">
+                <li>
+                  <span class="contact-href" href="" onclick="copy_to_clipboard()">
+                    <i class="far fa-envelope" style="color: #ffffff"></i>
+                      lambright.dustin@gmail.com
+                  </span>
+                </li>
+                <li>
+                  <a class="contact-href" href="http://www.github.com/dlambright">
+                    <i class="fab fa-github"style="color: #ffffff"></i>
+                    d.lambright
+                  </a>
+                </li>
+                <li>
+                  <a class="contact-href" href="https://www.instagram.com/mitt_rameny/">
+                    <i class="fab fa-instagram"style="color: #ffffff"></i>
+                    @mitt_rameny
+                  </a>
+                </li>
+              </ul>
 
             </span>
           </div>

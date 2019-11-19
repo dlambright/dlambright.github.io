@@ -75,3 +75,11 @@ function closeNav() {
 	$("#fp-nav").removeClass("d-none");
 	$(".hamburger").removeClass("is-active");
 }
+
+function copy_to_clipboard(){
+	var copyText = "lambright.dustin@gmail.com";
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
