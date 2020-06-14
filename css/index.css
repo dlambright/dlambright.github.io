@@ -1,0 +1,174 @@
+.nav{
+  background: none;
+}
+
+
+
+.my_work_tile {
+  background-color: #FFFFFF;
+  min-height: 30vh;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.fa-2x {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#profilePhotoDiv {
+  /*background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("../images/duzn.jpg");*/
+  background-image: linear-gradient(0.25turn, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/duzn.jpg");
+  background-size: cover; /*contain?*/
+  height: 100vh;
+}
+
+.typed-cursor {
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.carousel-stuff {
+  /* background-color: #00FF00; */
+}
+
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span
+{
+  /*: #fff!important;*/
+}
+
+#fp-nav li .active span,
+.fullPage-slidesNav .active span{
+	background: #333;
+}
+
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    height: 12px;
+    width: 12px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 100%;
+    background: #fff;
+
+
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 12px;
+    width: 12px;
+    border: 0;
+    background-color: transparent;
+    left: 50%;
+    top: 50%;
+    margin: -0px 0px 0px -0px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+
+    border-width:1px;
+    border-style: solid;
+    border-color: #fff;
+}
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  margin-bottom: 1rem;
+}
+
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 100vh;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111111FD; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 120px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #F1F1F1;
+  display: block;
+  transition: 0.3s;
+  -webkit-transition: all .25s;
+   -moz-transition: all   .25s;
+     -o-transition: all   .25s;
+        transition: all   .25s;
+
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #FFFFFF;
+  background-color: #FF9D00;
+  font-size: 60px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 30;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#myMenu .li .a{
+  color: '#0000FF';
+}
+
+.contact-href {
+  color: #fff;
+  font-size:32px;
+  font-weight:normal;
+}
+
+#typed {
+  font-size: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  #typed {
+      font-size: 60px;
+    }
+  }
