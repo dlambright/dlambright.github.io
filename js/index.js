@@ -8,7 +8,8 @@ $(document).ready(function() {
 			percentage: 62,
 			property: 'translate'
 		},
-		navigation: true,
+		navigation: false,
+		slidesNavigation: false,
 		navigationPosition: 'right',
 		slidesNavigation: 'false',
 		easing: 'easeInQuart',
