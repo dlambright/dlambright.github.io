@@ -34,9 +34,10 @@ $(document).ready(function() {
 		strings: [ //'<span style="color: #AA00AA; font-weight: bold;">Dustin</span>novation',
 			//'<span style="color: #AA00AA; font-weight: bold;">Dustin</span>tegrity',
 			//'<span style="color: #AA00AA; font-weight: bold;">Dustin</span>teresting'],
-			'<span style="font-weight: bold;">Awe-Inspiring</span>',
-			'<span style="font-weight: bold;">Breathtaking</span>',
-			'<span style="font-weight: bold;">Capitivating</span>'
+			'<span style="font-weight: bold;">Water</span>',
+			'<span style="font-weight: bold;">Earth</span>',
+			'<span style="font-weight: bold;">Fire</span>',
+			'<span style="font-weight: bold;">Air</span>',
 		],
 		smartBackspace: true,
 		typeSpeed: 80,
@@ -50,6 +51,12 @@ $(document).ready(function() {
 	};
 
 	var typed = new Typed('#typed', options);
+
+	if (window.screen.width < window.screen.height) {
+		$(".carouselImage").each(function() {
+			$(this).css("height", "40vh");
+		})
+	}
 
 });
 
