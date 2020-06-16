@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto Slab', serif;
 }
 
 .nav{
@@ -132,7 +132,7 @@ body {
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #FFFFFF;
-  background-color: #FF9D00;
+  background-color: #fff200;
   font-size: 60px;
 }
 

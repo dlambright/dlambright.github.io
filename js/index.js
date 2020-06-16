@@ -34,10 +34,10 @@ $(document).ready(function() {
 		strings: [ //'<span style="color: #AA00AA; font-weight: bold;">Dustin</span>novation',
 			//'<span style="color: #AA00AA; font-weight: bold;">Dustin</span>tegrity',
 			//'<span style="color: #AA00AA; font-weight: bold;">Dustin</span>teresting'],
-			'<span style="font-weight: bold;">Water</span>',
-			'<span style="font-weight: bold;">Earth</span>',
-			'<span style="font-weight: bold;">Fire</span>',
-			'<span style="font-weight: bold;">Air</span>',
+			'<span style="font-weight: bold; color: #fff200;">Water</span>',
+			'<span style="font-weight: bold; color: #fff200;">Earth</span>',
+			'<span style="font-weight: bold; color: #fff200;">Fire</span>',
+			'<span style="font-weight: bold; color: #fff200;">Air</span>',
 		],
 		smartBackspace: true,
 		typeSpeed: 80,
@@ -55,6 +55,10 @@ $(document).ready(function() {
 	if (window.screen.width < window.screen.height) {
 		$(".carouselImage").each(function() {
 			$(this).css("height", "40vh");
+		})
+
+		$(".contact-href").each(function() {
+			$(this).css("font-size", "16");
 		})
 	}
 
