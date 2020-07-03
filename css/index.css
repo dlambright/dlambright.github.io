@@ -195,12 +195,31 @@ a .fab {
   letter-spacing: 2px;
 }
 
+.carouselImage{
+  height: 80vh;
+}
+
+@media(max-width: 350px){
+  .hero-bg {
+    background-position: -565px;
+  }
+  .hero-text{
+    font-size: 60px;
+  }
+  .carouselImage{
+    height: 40vh;
+  }
+}
+
 @media(max-width: 500px){
   .hero-bg {
     background-position: -565px;
   }
   .hero-text{
     font-size: 60px;
+  }
+  .carouselImage{
+    height: 40vh;
   }
 }
 
