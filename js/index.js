@@ -14,7 +14,8 @@ $(document).ready(function() {
 		slidesNavigation: 'false',
 		easing: 'easeInQuart',
 		menu: 'myMenu',
-		anchors: ['home', 'work', 'contact']
+		anchors: ['home', 'work', 'contact'],
+		licenseKey: "10DF04BE-459D4E69-B4A1FC61-5A992153",
 
 		// autoScrolling:false,
 		// lockAnchors: false,
@@ -31,13 +32,10 @@ $(document).ready(function() {
 		closeNav();
 	});
 	var options = {
-		strings: [ //'<span style="color: #AA00AA; font-weight: bold;">Dustin</span>novation',
-			//'<span style="color: #AA00AA; font-weight: bold;">Dustin</span>tegrity',
-			//'<span style="color: #AA00AA; font-weight: bold;">Dustin</span>teresting'],
-			'<span style="font-weight: bold; color: #fff200;">Water</span>',
-			'<span style="font-weight: bold; color: #fff200;">Earth</span>',
-			'<span style="font-weight: bold; color: #fff200;">Fire</span>',
-			'<span style="font-weight: bold; color: #fff200;">Air</span>',
+		strings: [
+			'<span class="hero-text">Dynamic Collaboration</span>',
+			'<span class="hero-text">Unforgettable Shots</span>',
+			'<span class="hero-text">Inspiringly Dream-like</span>',
 		],
 		smartBackspace: true,
 		typeSpeed: 80,
@@ -48,19 +46,20 @@ $(document).ready(function() {
 		showCursor: true,
 		cursorChar: '|',
 		autoInsertCss: true,
+
 	};
 
 	var typed = new Typed('#typed', options);
 
-	if (window.screen.width < window.screen.height) {
-		$(".carouselImage").each(function() {
-			$(this).css("height", "40vh");
-		})
-
-		$(".contact-href").each(function() {
-			$(this).css("font-size", "16");
-		})
-	}
+	// if (window.screen.width < window.screen.height) {
+	// 	$(".carouselImage").each(function() {
+	// 		$(this).css("height", "40vh");
+	// 	})
+	//
+	// 	$(".contact-href").each(function() {
+	// 		$(this).css("font-size", "16");
+	// 	})
+	// }
 
 });
 
