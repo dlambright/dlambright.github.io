@@ -203,6 +203,7 @@ a .fab {
   .hero-bg {
     background-image: url(../images/joel/dancer_portrait.png);
     height:100vh;
+    background-position: 0px 44px;
   }
   .hero-text{
     font-size: 60px;
@@ -216,6 +217,7 @@ a .fab {
   .hero-bg {
     background-image: url(../images/joel/dancer_portrait.png);
     height:100vh;
+    background-position: 0px 44px;
   }
   .hero-text{
     font-size: 60px;
@@ -229,6 +231,7 @@ a .fab {
   .hero-bg {
     background-image: url(../images/joel/dancer_portrait.png);
     height:100vh;
+    background-position: 0px 44px;
   }
   .carouselImage{
     height: 40vh;
