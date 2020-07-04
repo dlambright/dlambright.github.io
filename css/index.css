@@ -181,7 +181,7 @@ a .fab {
 }
 
 .hero-bg{
-  background-image: url(../images/joel/dancer.jpg);
+  background-image: url(../images/joel/dancerII.JPG);
   background-size: cover;
   background-position: left center;
   height:100vh;
@@ -201,7 +201,7 @@ a .fab {
 
 @media(max-width: 350px){
   .hero-bg {
-    background-position: -565px;
+    background-image: url(../images/joel/dancer_portrait.png);
   }
   .hero-text{
     font-size: 60px;
@@ -213,7 +213,7 @@ a .fab {
 
 @media(max-width: 500px){
   .hero-bg {
-    background-position: -565px;
+    background-image: url(../images/joel/dancer_portrait.png);
   }
   .hero-text{
     font-size: 60px;
@@ -225,7 +225,7 @@ a .fab {
 
 @media(max-width: 1024px){
   .hero-bg {
-    background-position: -500px;
+    background-image: url(../images/joel/dancer_portrait.png);
   }
   .carouselImage{
     height: 40vh;
