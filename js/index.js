@@ -33,9 +33,9 @@ $(document).ready(function() {
 	});
 	var options = {
 		strings: [
-			'<span class="hero-text">Dynamic Collaboration</span>',
-			'<span class="hero-text">Unforgettable Shots</span>',
-			'<span class="hero-text">Inspiringly Dream-like</span>',
+			'<span class="hero-text">Dynamic Collaboration . . . </span>',
+			'<span class="hero-text">Unforgettable Shots . . . </span>',
+			'<span class="hero-text">Inspiringly Dream-like . . . </span>',
 		],
 		smartBackspace: true,
 		typeSpeed: 80,
