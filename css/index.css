@@ -188,7 +188,7 @@ a .fab {
 }
 
 .hero-bg{
-  background-image: url(../images/joel/dancer2.JPG);
+  background-image: url(../images/joel/dance/dancer2.JPG);
   background-size: cover;
   background-position: left center;
   height:100vh;
@@ -200,6 +200,7 @@ a .fab {
   color: #fff200;
   font-size: 130px;
   letter-spacing: 2px;
+  font-family: 'Wire One';
 }
 
 .carouselImage{
@@ -220,17 +221,19 @@ a .fab {
 }
 
 .cardLink {
-  background-color: #fff200;
+  background-color: #fff20000;
   border-radius: 5px;
   border-style: solid;
   border-color: #fff200;
+  border-width: 3px;
   margin-top: 2rem;
 }
 
 .cardLinkTitle {
-  color: black;
+  color: #fff200;
   font-weight: bold;
   text-align: center;
+  margin: 0px;
 }
 
 @media(max-width: 350px){
