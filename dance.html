@@ -114,6 +114,18 @@
   <script type="text/javascript" src="js/fullpage.js"></script>
 
   <script>
+    $(document).ready(function() {
+      if (screen.width < 425) {
+        $(".carouselImage").each(function() {
+          var originalImage = $(this).attr('src');
+          if (!originalImage.includes("_portrait")) {
+            originalName = originalImage.split(".")[0];
+            $(this).attr("src", originalName + "_portrait.jpg");
+          }
+        })
+      }
+    })
+
     $(window).resize(() => {
       if (screen.width < 425) {
         $(".carouselImage").each(function() {
@@ -128,11 +140,12 @@
           var originalImage = $(this).attr('src');
           if (originalImage.includes("_portrait")) {
             originalName = originalImage.split(".")[0];
-            var newName = originalName.slice(-8)
-            $(this).attr("src", newName);
+            var newName = originalName.slice(0, originalName.length - 9)
+            $(this).attr("src", newName + ".jpg");
           }
         })
       }
+
     })
   </script>
 
