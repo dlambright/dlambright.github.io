@@ -1,6 +1,6 @@
 body {
   font-family: 'Wire One';
-  background-color: black;
+  background-color: #0c0c0c;
 }
 
 .nav{
@@ -16,7 +16,7 @@ a .fab {
   min-height: 30vh;
   margin: 10px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 0px;
 
 }
 
@@ -224,10 +224,10 @@ a .fab {
 
 .cardLink {
   background-color: #fff20000;
-  border-radius: 5px;
+  border-radius: 0px;
   border-style: solid;
   border-color: #fff200;
-  border-width: 3px;
+  border-width: 1px;
   margin-top: 2rem;
 }
 
