@@ -2,12 +2,6 @@ var sideNavIsVisible = false;
 
 $(document).ready(function() {
 	$('#fullPage').fullpage({
-		parallax: true,
-		parallaxOptions: {
-			type: 'reveal',
-			percentage: 62,
-			property: 'translate'
-		},
 		navigation: false,
 		slidesNavigation: false,
 		navigationPosition: 'right',
@@ -18,12 +12,14 @@ $(document).ready(function() {
 		licenseKey: "10DF04BE-459D4E69-B4A1FC61-5A992153",
 
 		// autoScrolling:false,
-		// lockAnchors: false,
+		lockAnchors: false,
 		// anchors:['firstPage', 'secondPage'],
 	});
 
 	//methods
-	$.fn.fullpage.setAllowScrolling(true);
+	// $.fn.fullpage.setAllowScrolling(true);
+	// $.fn.fullpage.setLockAnchors(false);
+	// fullpage_api.setLockAnchors(false);
 
 	$('#fullPage').on('click', function() {
 		closeNav();
@@ -33,9 +29,9 @@ $(document).ready(function() {
 	});
 	var options = {
 		strings: [
-			'<span class="hero-text">Dynamic Collaboration . . . </span>',
-			'<span class="hero-text">Unforgettable Shots . . . </span>',
-			'<span class="hero-text">Inspiringly Dream-like . . . </span>',
+			'<span class="hero-text">Dynamic Collaboration </span>',
+			'<span class="hero-text">Unforgettable Shots</span>',
+			'<span class="hero-text">Inspiringly Dream-like</span>',
 		],
 		smartBackspace: true,
 		typeSpeed: 80,
